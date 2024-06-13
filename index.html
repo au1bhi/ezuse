@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vJudge Links</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .link-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    .link-item {
+      margin-bottom: 20px;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .link-item:hover {
+      transform: translateY(-5px);
+    }
+    .link-item a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+    .link-item a:hover {
+      color: #0056b3;
+    }
+    .link-item a:hover::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 5px;
+      border-radius: 5px;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      font-size: 12px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .link-item a:hover::after {
+      opacity: 1;
+    }
+    .sidebar {
+      width: 200px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    .sidebar h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+    .sidebar a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+    .sidebar a:hover {
+      color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>该学算法了</h2>
+    <ul>
+      <li><a href="https://www.luogu.com.cn/" data-tooltip="Luogu">洛谷</a></li>
+      <li><a href="https://stackoverflow.com/" data-tooltip="Stack Overflow">Stack Overflow</a></li>
+      <li><a href="https://codeforces.com/" data-tooltip="Codeforces">Codeforces</a></li>
+      <li><a href="https://atcoder.jp/" data-tooltip="AtCoder">AtCoder</a></li>
+      <li><a href="https://www.acwing.com/" data-tooltip="AcWing">AcWing</a></li>
+      <!-- 在此添加其他链接 -->
+    </ul>
+  </div>
+  <div style="margin-left: 220px;">
+    <h1>vJudge Links</h1>
+    <ul class="link-list">
+      <li class="link-item">
+      <a href="https://vjudge.net/contest/633937" data-tooltip="泉信院 --- C with STL">泉信院 --- C with STL</a>
+    </li>
+    <li class="link-item">
+      <a href="https://vjudge.net/contest/632337	" data-tooltip="泉信院 6.3-6.10">泉信院 6.3-6.10</a>
+    </li>
+    <li class="link-item">
+      <a href="https://vjudge.net/contest/631661" data-tooltip="泉州信息工程学院数据结构编程实验（1）">泉州信息工程学院数据结构编程实验（1）</a>
+    </li>
+    <li class="link-item">
+      <a href="https://vjudge.net/contest/630246	" data-tooltip="泉州信息工程学院程序设计综合实践——Day 4">泉州信息工程学院程序设计综合实践——Day 4</a>
+    <li class="link-item">
+      <a href="https://vjudge.net/contest/630077	" data-tooltip="泉州信息工程学院程序设计实践入门（2）">泉州信息工程学院程序设计实践入门（2）</a>
+    </li>
+    <li class="link-item">
+      <a href="https://vjudge.net/contest/630047	" data-tooltip="	泉州信息工程学院程序设计综合实践——Day 3">泉州信息工程学院程序设计综合实践——Day 3</a>
+    </li>
+    <li class="link-item">
+      <a href="https://vjudge.net/contest/629910	" data-tooltip="泉州信息工程学院程序设计综合实践——Day 2">泉州信息工程学院程序设计综合实践——Day 2</a>
+    </li>
+    <li class="link-item">
+      <a href="https://vjudge.net/contest/629248	" data-tooltip="泉州信息工程学院DP（1）线性DP">泉州信息工程学院DP（1）线性DP</a>
+    </li>
+    <li class="link-item">
+      <a href="https://vjudge.net/contest/629106	" data-tooltip="泉州信息工程学院程序设计实践入门（1）">泉州信息工程学院程序设计实践入门（1）</a>
+    </li>
+    <li class="link-item">
+      <a href="https://vjudge.net/contest/618255" data-tooltip="泉州信息工程学院程序设计（6）">泉州信息工程学院程序设计（6）</a>
+    </li>
+    <li class="link-item">
+      <a href="https://vjudge.net/contest/615811" data-tooltip="	泉州信息工程学院程序设计（1）">泉州信息工程学院程序设计（1）</a>
+    </li>
+    </ul>
+  </div>
 
+</body>
+</html>
